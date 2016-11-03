@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>myOwnDirective</title>
+  </head>
+  <body>
+
+    <div ng-controller="MainCtrl">
+      <input autofocus="autofocus" type="text" placeholder="Enter a color for a colorful surprise!" ng-model="color">
+      <!-- <div data-hello-world color-attr="{{ color }}"></div> -->
+      <!-- one way db -->
+      <!-- <div data-hello-world color="{{ color }}"></div> -->
+      <!-- two way db -->
+      <div data-hello-world color="color" change-color="change()"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="helloController.js"></script>
+  </body>
+</html>
